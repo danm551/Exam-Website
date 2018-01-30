@@ -3,7 +3,8 @@ Initially a project for school, this is a website that facilitates the exam buil
 
 * Instructors and students make accounts.
 
-## Instructors-An instructor can build an exam based on the questions on the database.
+## Instructors
+  *An instructor can build an exam based on the questions on the database.
   *Instructors can also create their own questions using the provided templates. The new question will be added to the database.
   *Questions are of the types multiple choice, fill in the blank, true or false, and open ended Java programming.
   *Once satisfied with the exam they have built, the instructor may release the exam to the students.
