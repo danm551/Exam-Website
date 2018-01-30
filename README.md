@@ -1,5 +1,5 @@
 # Exam-Website
-Initially a project for school, this is a website that facilitates the exam building and taking process. It was built using the MVC architecture. More documentation was obviously required but we all know how stressed for time it can be when you're in college!
+Initially a project for school, this is a website that facilitates the exam building and taking process. It was built using the MVC architecture. More documentation was obviously required but we all know how stressed for time you can be when you're in college!
 
 * Instructors and students make accounts.
 
