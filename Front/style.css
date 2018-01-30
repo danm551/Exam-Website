@@ -1,0 +1,897 @@
+.register{
+  clear:both;
+  position:relative;
+  left:80px;
+  top: -25px;
+}
+
+.submit{
+  clear:both;
+  position:relative;
+  top: 12px;
+}
+
+.pos-middle1{
+  position:relative;
+  top: 90px;
+  left: 900px;
+}
+
+.select-reg{
+  width: 10%;
+  padding: 10px 10px;
+  border: none;
+  !border-radius: 4px;
+  background-color: #f1f1f1;
+  position:relative;
+  top: 75px;
+  left: 663px;
+}
+
+.resultMarks{
+  font-family: Poiret One;
+  position:relative;
+  left:775px;
+  top:40px;
+}
+
+.header2{
+  font-family: verdana, sans-serif;
+  font-size: 15px;
+  letter-spacing: 6.2pt;
+  word-spacing: 2.6pt;
+  line-height: 1.3;
+  position:relative;
+  top: 12px;
+  left: 780px;
+}
+
+.header2-reg{
+  font-family: verdana, sans-serif;
+  font-size: 15px;
+  letter-spacing: 6.2pt;
+  word-spacing: 2.6pt;
+  line-height: 1.3;
+  position:relative;
+  top: 12px;
+  left: 860px;
+}
+
+.header3{
+  position:relative;
+  top: 12px;
+  left: 930px;
+}
+
+.usernameBox-static{
+  height: 25px; 
+  width: 200px; 
+  background-color: solid #99ffcc;  
+  color: #000000;
+  border-style: solid;  
+  border-width: 0px 0px 1px 0px;  
+  border-color: #f70000; 
+  outline: 0; 
+  position:relative;
+  top: 12px;
+  left: 863px;
+}
+
+.usernameText{
+  position:relative;
+  top: 15px;
+  left: 920px;
+}
+ 
+.textbox{ 
+    -moz-border-radius-topright: 30px;
+    -webkit-border-top-right-radius: 30px;
+    border-top-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 1px solid #848484;
+    outline: 0; 
+    height: 25px; 
+    width: 275px; 
+    padding-right: 15px; 
+    padding-left: 15px; 
+} 
+
+.teacherBtn{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: verdana, sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  background: #1ca7e8;
+  padding: 13px 40px 4px 0px;
+  text-decoration: none;
+}
+
+.teacherBtn:hover{
+  background: #093f61;
+  text-decoration: none;
+}
+
+.hr1{
+  width: 280px;
+  position: relative;
+  right: 900px;
+  bottom: 15px;
+  transition: 500ms all ease;
+}
+
+.hr2{
+  width: 300px;
+  position: relative;
+  right: 850px;
+  bottom: 15px;
+}
+
+.hr3{
+  width: 400px;
+  position: relative;
+  right: 850px;
+  bottom: 15px;
+}
+
+.hr3-student{
+  width: 400px;
+  position: relative;
+  right: 850px;
+  bottom: 7px;
+}
+
+.hr4{
+  width: 500px;
+  position: relative;
+  right: 850px;
+  bottom: 7px;
+}
+
+h1:Hover{
+  width: 350px;
+}
+
+.qBox1{
+  position: relative;
+  left: 57px;
+}
+
+.qBox2{
+  position: relative;
+  left: 86px;
+}
+
+.qBox3{
+  position: relative;
+  left: 126px;
+}
+
+.qBox4{
+  position: relative;
+  left: 138px;
+}
+
+.qBox5{
+  position: relative;
+  left: 56px;
+}
+
+.commentBox{
+  position: relative;
+  left: 23px;
+}
+
+.submit2{
+  position: relative;
+  left: 101px;
+  bottom: 21px;
+}
+
+/*
+  fontCreateExam
+*/
+
+.dropbox{
+  width: 700px;
+  height: 52px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  position: relative;
+  left: 150px;
+}
+
+.dropbox2{
+  width: 700px;
+  height: 700px;
+  padding: 10px;
+  border: 13px rgb(89,89,89) solid;
+  position: relative;
+  left: 0px;
+  bottom: 30px;
+  overflow: auto;
+}
+
+.qFrame{
+  width: 900px;
+  height: 640px;
+  padding: 40px;
+  border: 13px rgb(89,89,89) solid;
+  position: relative;
+  left: 780px;
+  bottom: 776px;
+  overflow: auto;
+}
+
+.qNumbers{
+  width: 700px;
+  height: 20px;
+  position: relative;
+  left: 125px;
+}
+
+.mcDiv{
+  font-family: Crete Round;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 678px;
+  height: 60px;
+  border-right: 30px dashed #1f628d;
+  border-top: 2px solid #1f628d;
+  border-bottom: 2px solid #1f628d;
+  border-left: 2px solid #1f628d;
+  position: relative;
+  left: -10px;
+  bottom: 11px;
+  overflow: auto;
+}
+
+.fitbDiv{
+  font-family: Crete Round;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 678px;
+  height: 60px;
+  border-right: 30px dashed #2c8247;
+  border-top: 2px solid #2c8247;
+  border-bottom: 2px solid #2c8247;
+  border-left: 2px solid #2c8247;
+  position: relative;
+  left: -10px;
+  bottom: 11px;
+  overflow: auto;
+}
+
+.tfDiv{
+  font-family: Crete Round;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 678px;
+  height: 60px;
+  border-right: 30px dashed #a8911c;
+  border-top: 2px solid #a8911c;
+  border-bottom: 2px solid #a8911c;
+  border-left: 2px solid #a8911c;
+  position: relative;
+  left: -10px;
+  bottom: 11px;
+  overflow: auto;
+}
+
+.oeDiv{
+  font-family: Crete Round;
+  text-align: left;
+  font-size: 95%;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 678px;
+  height: 60px;
+  border-right: 30px dashed #9c0909;
+  border-top: 2px solid #9c0909;
+  border-bottom: 2px solid #9c0909;
+  border-left: 2px solid #9c0909;
+  position: relative;
+  left: -10px;
+  bottom: 11px;
+  overflow: auto;
+}
+
+.mcBtn{
+  width: 135px;
+  height: 40px;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Crete Round;
+  color: #ffffff;
+  font-size: 14px;
+  background: #3498db;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  position: relative;
+  left: 0px;
+  bottom: 1562px;
+}
+
+.mcBtn:hover{
+  background: #3a6580;
+  text-decoration: none;
+}
+
+.fitbBtn{
+  width: 135px;
+  height: 40px;
+  text-align: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Crete Round;
+  color: #ffffff;
+  font-size: 14px;
+  background: #2c8247;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  position: relative;
+  left: 0px;
+  bottom: 1562px;
+}
+
+.fitbBtn:hover{
+  background: #04300b;
+  text-decoration: none;
+}
+
+.tfBtn{
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Crete Round;
+  color: #ffffff;
+  font-size: 14px;
+  background: #a8911c;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  position: relative;
+  left: -4px;
+  bottom: 1562px;
+}
+
+.tfBtn:hover{
+  background: #382e04;
+  text-decoration: none;
+}
+
+.oeBtn{
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Crete Round;
+  color: #ffffff;
+  font-size: 14px;
+  background: #9c0909;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  position: relative;
+  left: -8px;
+  bottom: 1562px;
+}
+
+.oeBtn:hover{
+  background: #420909;
+  text-decoration: none;
+}
+
+.searchBtn{
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Crete Round;
+  color: #ffffff;
+  font-size: 14px;
+  background: #518596;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  position: relative;
+  left: 59px;
+  bottom: 1562px;
+}
+
+.searchBtn:hover{
+  background: #172a1f;
+  text-decoration: none;
+}
+
+.createExamSubmit{
+  position: relative;
+  left: 90px;
+  position: relative;
+  bottom: 1900px;
+}
+
+.scoreBox{ 
+  width: 60px;
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  position: relative;
+} 
+
+.scoreText{
+  font-family: Poiret One;
+  letter-spacing: 10pt;
+	color: #571616;
+	font-size: 22;
+	padding: 21;
+	font-weight: bold;
+	text-shadow: 1px 1px 15px #9E9090;
+  position: relative;
+  top: 100px;
+  left: 800px;
+}
+
+.questionText{
+  font-family: Poiret One;
+  letter-spacing: 10pt;
+	color: #571616;
+	font-size: 22;
+	padding: 21;
+	font-weight: bold;
+	text-shadow: 1px 1px 15px #9E9090;
+  position: relative;
+  top: 83px;
+  left: 1200px;
+}
+
+.poiretOne{
+  font-family: Poiret One;
+  letter-spacing: 10pt;
+	color: #571616;
+	font-size: 22;
+	padding: 21;
+	font-weight: bold;
+	text-shadow: 1px 1px 15px #9E9090;
+  position: relative;
+}
+
+/* Results */
+
+.finalScore{
+  font-family: Poiret One;
+  letter-spacing: 10pt;
+	color: #571616;
+	font-size: 200%;
+	padding: 21;
+	font-weight: bold;
+	text-shadow: 1px 1px 15px #9E9090;
+  position: relative;
+  top: 0px;
+  left: 200px;
+}
+
+.resultsText{
+  font-family: Crete Round;
+	color: #571616;
+	font-size: 100%;
+  position: relative;
+}
+
+.resultsBox{
+  width: 800px;
+  border: 13px rgb(89,89,89) solid;
+  padding: 70px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 400px;
+  background: rgb(238, 235, 179);
+  -webkit-box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+  -moz-box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+  box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+}
+
+.backBtnResults{
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #0badd6;
+  padding: 6px 32px 7px 32px;
+  text-decoration: none;
+  clear:both;
+  position: relative;
+  top: 30px;
+}
+.backBtnResults:hover{
+  background: #07324d;
+  text-decoration: none;
+}
+
+/* Question Creation */
+
+.addQuestonFrame{
+  width: 700px;
+  height: 600px;
+  padding: 15px;
+  border: 13px rgb(89,89,89) solid;
+  position: relative;
+  left: 780px;
+  bottom: 776px;
+  background: white;
+  overflow: auto;
+}
+
+.questionCreateSelect{
+  width: 800px;
+  border: 13px rgb(89,89,89) solid;
+  padding: 70px;
+  margin-top: 7%;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  background: rgb(238, 235, 179);
+  -webkit-box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+  -moz-box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+  box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+}
+
+.addQuestion{
+  font-family: Poiret One;
+  letter-spacing: 10pt;
+	color: #571616;
+	padding: 21;
+	font-weight: bold;
+	text-shadow: 1px 1px 15px #9E9090;
+}
+
+.mcBtn2{
+  width: 200px;
+  font-family: Crete Round;
+	color: #ffffff;
+	font-size: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  background: #3498db;
+  padding: 13px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.mcBtn2:hover{
+  background: #3a6580;
+  text-decoration: none;
+}
+
+.fitbBtn2{
+  width: 200px;
+  font-family: Crete Round;
+	color: #ffffff;
+	font-size: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  background: #2c8247;
+  padding: 13px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.fitbBtn2:hover{
+  background: #04300b;
+  text-decoration: none;
+}
+
+.tfBtn2{
+  width: 200px;
+  font-family: Crete Round;
+	color: #ffffff;
+	font-size: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  background: #a8911c;
+  padding: 13px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.tfBtn2:hover{
+  background: #382e04;
+  text-decoration: none;
+}
+
+.oeBtn2{
+  width: 200px;
+  font-family: Crete Round;
+	color: #ffffff;
+	font-size: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  background: #9c0909;
+  padding: 13px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.oeBtn2:hover{
+  background: #420909;
+  text-decoration: none;
+}
+
+.backBtnCreateQuestionSelect{
+  font-family: Crete Round;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border: solid #1f628d 2px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 100%;
+  background: #0badd6;
+  padding: 6px 32px 7px 32px;
+  text-decoration: none;
+  clear:both;
+  position: relative;
+}
+.backBtnCreateQuestionSelect:hover{
+  background: #07324d;
+  text-decoration: none;
+}
+
+.createQuestionBox{
+  border: 13px rgb(89,89,89) solid;
+  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 200px;
+  -webkit-box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+  -moz-box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+  box-shadow: 24px 38px 75px -6px rgba(0,0,0,0.44);
+}
+
+.textbox{ 
+  border: 1px solid #c4c4c4; 
+  height: 25px; 
+  font-size: 13px; 
+  padding: 4px 4px 4px 4px; 
+  border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  -webkit-border-radius: 4px; 
+  box-shadow: 0px 0px 8px #d9d9d9; 
+  -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+  -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+  position: relative;
+} 
+ 
+.textbox:focus{ 
+  outline: none; 
+  border: 1px solid #7bc1f7; 
+  box-shadow: 0px 0px 8px #7bc1f7; 
+  -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+  -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+} 
+
+.createQuestionSubmit{
+  font-family: Crete Round;
+	color: #ffffff;
+	font-size: 100%;
+  border: solid #1f628d 2px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  background: #cc2626;
+  padding: 6px 32px 7px 32px;
+  text-decoration: none;
+  clear:both;
+  position:relative;
+  top: 15px;
+}
+
+.createQuestionSubmit:hover {
+  background: #07324d;
+  text-decoration: none;
+}
+
+.radioBtn{
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: 20px auto;
+  background: #fcfff4;
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+}
+
+.styledSelect{
+  background: url(images/arrow.png) no-repeat 96% 0;
+  background-color: 	#ffffff;
+  border-radius: 5px;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+  position: relative;
+}
+
+.styledSelect select {
+  font-family: Crete Round;
+  color: #000000;
+  font-size: 100%;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px; 
+  width: 268px;
+}
+
+.backBtnCreateExam{
+  font-family: Crete Round;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border: solid #1f628d 2px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 100%;
+  background: #0badd6;
+  padding: 6px 32px 7px 32px;
+  text-decoration: none;
+  clear:both;
+  position: relative;
+}
+.backBtnCreateExam:hover{
+  background: #07324d;
+  text-decoration: none;
+}
+/*Teacher Menu*/
+
+.teachBtn2{
+  width: 500px;
+  font-family: Crete Round;
+  letter-spacing: 17px;
+  text-align: left;
+	color: rgb(48, 54, 50);
+	font-size: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  background: #D49494;
+  padding: 13px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.teachBtn2:hover{
+  background: #ED0909;
+  text-decoration: none;
+  color: rgb(238, 247, 241);
+}
+
+/*Student Menu*/
+
+.studentBtn2{
+  width: 500px;
+  font-family: Crete Round;
+  letter-spacing: 17px;
+  text-align: left;
+	color: rgb(48, 54, 50);
+	font-size: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  background: rgb(221, 234, 114);
+  padding: 13px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.studentBtn2:hover{
+  background: rgb(96, 105, 20);
+  text-decoration: none;
+  color: rgb(238, 247, 241);
+}
+
+/* Login */
+
+.loginBox{
+border: 29px rgb(165, 233, 238) solid;
+}
+
+.login{
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Crete Round;
+  color: #ffffff;
+  font-size: 15px;
+  background: #0badd6;
+  padding: 6px 32px 7px 32px;
+  text-decoration: none;
+  clear:both;
+  position:relative;
+  top: 15px;
+}
+
+.login:hover {
+  background: #07324d;
+  text-decoration: none;
+}
+
+.reg{
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Crete Round;
+  color: #ffffff;
+  font-size: 15px;
+  background: #cc2626;
+  padding: 6px 32px 7px 32px;
+  text-decoration: none;
+  clear:both;
+  position:relative;
+  top: 15px;
+}
+
+.reg:hover {
+  background: #07324d;
+  text-decoration: none;
+}
+
+.usernameBox{
+  font-family: Crete Round;
+  height: 25px; 
+  width: 200px; 
+  background-color: solid #99ffcc;  
+  color: #000000;
+  border-style: solid;  
+  border-width: 0px 0px 1px 0px;  
+  border-color: #f70000; 
+  outline: 0; 
+  transition: 500ms all ease;
+  position:relative;
+  top: 12px;
+}
+
+.usernameBox:Hover{
+  width: 275px;
+}
+
+/* frontSelectExam */
+
+.selectExamBtn{
+  font-family: Crete Round;
+  color: black;
+  font-size: 100%;
+  letter-spacing: 17px;
+  border: solid #1f628d 2px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  background: white;
+  padding: 6px 32px 7px 32px;
+  text-decoration: none;
+  clear:both;
+  position:relative;
+  top: 15px;
+}
+
+.selectExamBtn:hover {
+  color: white;
+  background: black;
+  text-decoration: none;
+}

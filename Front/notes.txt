@@ -1,0 +1,19 @@
+-When creating a question, it does not check whether the argument type count matches the argument count.
+//Can see answers when taking an exam by inspecting page.
+-Exams table does not track teachers name for retrieving specific exams for release.
+-Teacher - display only the Exams that need to be released.
+-Once exam is taken the student shouldn't be able to take it again.
+-When taking exam, if the user answer to an MC question is &&, it will get saved to database as normal, but upon retrival for results processint it will be lost. Possiby due to regular expression syntax.
+
+-Teacher notes:
+  //*Function always returns something. Can test keywords to eliminate cheating (no "System.out.println", etc.). Loop questions (for, while, do while).
+  //*Better way to build exam. Split-screen.
+  //*At least 4 mc options.
+  //*Points assigned to questions for grading.
+  //*Ability to see comments for wrong answers.
+  *No need to see more than one exam at a time.
+  //*only handles return int!
+  *edit questions.
+  //*add more questions in the create exam menu!
+  *On create exam screen, don't display questions on the question retrieval boxes if they are already selected on the right.
+  

@@ -1,0 +1,151 @@
+CREATE TABLE  Users (name VARCHAR(20),  pass VARCHAR(60), type VARCHAR(10));
+
+CREATE TABLE mcQuestions(id INT PRIMARY KEY AUTO_INCREMENT, Type VARCHAR(4), Question VARCHAR(255), CorrectAnswer VARCHAR (100), Answer2 VARCHAR(100), Answer3 VARCHAR(100), Answer4 VARCHAR(100), Answer5 VARCHAR(100), Comment VARCHAR(200));
+
+CREATE TABLE fitbQuestions(id INT PRIMARY KEY AUTO_INCREMENT, Type VARCHAR(4), Question VARCHAR(255), CorrectAnswer VARCHAR (100), Comment VARCHAR(200));
+
+CREATE TABLE tfQuestions(id INT PRIMARY KEY AUTO_INCREMENT, Type VARCHAR(4), Question VARCHAR(255), CorrectAnswer VARCHAR (100), Comment VARCHAR(200));
+
+CREATE TABLE oeQuestions(id INT PRIMARY KEY AUTO_INCREMENT, Type VARCHAR(4), FuncName VARCHAR(50), Args INT, Question VARCHAR(255), Returns VARCHAR(10), Arg1 VARCHAR(50), Arg2 VARCHAR(50), Arg3 VARCHAR(50), Arg4 VARCHAR(50), Type1 VARCHAR(50), Type2 VARCHAR(50), Type3 VARCHAR(50), Type4 VARCHAR(50), Answer1 VARCHAR (100));
+
+CREATE TABLE Exams(id INT PRIMARY KEY AUTO_INCREMENT, examName VARCHAR(30), questions VARCHAR(250), points VARCHAR(250), taken INT, releaseGrades INT);
+
+CREATE TABLE ExamResults (username VARCHAR(20), examName VARCHAR(30), answers VARCHAR(400), correct VARCHAR(100), wrong   VARCHAR(100), output VARCHAR(200));
+
+
+
+
+
+
+Questions:
+
+MC:
+
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', 'Choose the appropriate data type for this field: numberOfEggs', 'Int', 'Boolean', 'String', 'float', 'char', 'The data type int holds an integer value and is the most appropriate choice in this case.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', 'Choose the appropriate data type for this field: true', 'Boolean', 'Int', 'Double',
+'float', 'char', 'The data boolean is used to hold the value true or false and is the most suitable data type in this case.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', 'Object-Oriented Programming means ... ', 'Writing a program composed of Java classes', 'Writing an algorithm before writing your program and having a test plan', 'Being objective about what you develop', 'Writing a program in Java.', 'Always writing the code from scratch.', 'Object-Oriented Programming is a programming language model organized around objects, such as java classes.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "In a for-loop, what section of the loop is not included in the parentheses after 'for' ?", 'Loop body', 'Initialization', 'Update statement', 'Semi-colons', 'Loop termination statement', 'Initializatoin, loop termination, and update statement are all separated by semi-colons.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', 'What is the keyword used in java to create an object?', 'New', 'This', 'Create', 'Int', 'Final', "The 'new' keyword is used to create a new class object.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', 'Choose the appropriate data type for this value: 5.5', 'Double', 'String', 'Int', 'char', 'new', "The data type 'double' is a 64-bit floating point number and would be the most appropriate in this case.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', 'What is the proper way to declare a variable ?', 'VariableType variableName;', 'VariableName variableType;', 'VariableName;', 'new variableName;', 'declare variableName;', 'The data type is placed to the left of the variable name.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Use this loop if you don't know how many iterations you need and you need to run the loop at least once.", 'do-while loop', 'while loop', 'for loop', 'once loop', 'nested for loop', 'The do-while loop assures you will run the loop at least once.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Use this loop if you don't know how many iterations you need and the loop does not necessarily have to run.", 'while loop', 'do-while loop', 'for loop', 'switch statement', 'nested for loop', 'The while loop will only run and terminate under the specified conditions.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Use this loop if you know exactly how many iterations you need.", 'for loop', 'do-while loop', 'while loop', 'switch statement', 'exact loop', 'The for loop can be cruicial in reducing overhead when you know how many times a loop has to run.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical AND.", 'double ampersand', '||', '>', '==', '$$', 'Use && when you want to include AND in a conditional statement.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical OR.", '||', 'double ampersand', '>', '==', '*', 'Use || when you want to include OR in a conditional statement.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical LESS-THAN.", '<', 'double ampersand', '>', '==', '*', 'This operator will evaluate the left-hand data member as LESS-THAN the right-hand data member and find the truth value.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical MORE-THAN.", '>', 'double ampersand', '<', '==', '+', 'This operator will evaluate the left-hand data member as MORE-THAN the right-hand data member and find the truth value.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical EQUAL.", '==', 'double ampersand', '>', '!=', '=', "Remember: one equal sign means assignment and two equal signs mean 'I want to evaluate these items for equality'");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical NOT EQUAL.", '!=', 'double ampersand', '<', '==', '!!', "The ! means nagation, therefore, != means NOT equal.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Choose the appropriate data type for this field: lastName", 'String', 'Boolean', 'array', 'float', 'char', "A 'String' variable is the simplest way to store a string literal.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Given the string \"Hello World\", which index will give you access to the letter 'W'?", '6', '5', '7', '3', '8', "Always remember to begin counting from index 0.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "How would you post-increment the variable 'int count'?", 'count++;', '++count;', 'count--;', '--count;', 'count+1;', "Placing the ++ after the variable means the value will be incremented AFTER it has been used.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of the following is a shorthand way to add 3 to the variable 'int number'?", 'number+=3;', '3 =+ number;', 'number==3;', 'number++3;', 'number = number + 3;', "The statement 'number +=3' is the same as 'number = number + 3'.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of the following statements defines a variable that will be common amongst all objects?", 'static int number = 5;', 'final int number = 5;', 'Shared int number = 5;', 'new int number = 5;', 'const int number = 5;', "Static variables and methods are shared by all objects of that class.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of the following words is a Java keyword that refers to the current object?", 'this', 'that', 'current', 'new', 'instanceof', "The declaration 'this.number' would be a reference to the number data field in the current object.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of the following words is a Java keyword that refers to a class' parent class?", 'super', 'amazing', 'parent', 'superior', 'upper', "The keyword super will refer to the parent class.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of the these words is not a keyword associated with exception handling?", 'handle', 'try', 'catch', 'throw', 'finally', "The keywords try, catch, throw, and finally are all associated with exception handling.");
+ INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of these initialization statements is most appropriate for this field: numberOfMonths", 'final int numberOfMonths;', 'double numberOfMonths;', 'String numberOfMonths;', 'float numberOfMonths;', 'final numberOfMonths;', "Number of months will remain constant, therefore 'final int numberOfMonths;' is most appropriate.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of these variables is most appropriate to store the result of the method called 'numberOfCars'?", 'int result', 'double result', 'String result', 'float result', 'char result', "The result of  the method 'numberOfCars' will most likely be an integer.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of these variables is most appropriate to store the result of the method called 'getName'?", 'String name', 'double name;', 'int name', 'float name', 'short name', "The result of  the method 'getName' will most likely be a String value.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of these variables is most appropriate to store the result of the method called 'getPrice'?", 'double price', 'String price;', 'int price', 'char price', 'short price', "The result of  the method 'getPrice' will most likely be a double value.");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "Which of these variables is most appropriate to store the name of all your friends?", 'String[] friends', 'int[] friends', 'char[] friends', 'String friends', 'double[] friends', "It will be a collection of identical data types, therefore an array of Strings would be your best bet.");
+
+
+FITB:
+
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', 'If a super class method is modified in the sub class then it is called method ___ .', 'overriding', 'Think of it as a subordinate overriding a superior.');
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', 'If a class has more than one method with same name but with different list of arguments, then it is called method ___.', 'overloading', 'You can have methods with the same name but they must have different parameter lists.');
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', 'The code to be monitored for exceptions will be kept in a ___ block.', 'try', "You can envelope a chunk of code in a 'try' block if you believe a block of code is susceptible to exceptions."); 
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', 'An ___ is the data item specified in a method call.', 'argument', "If a method requires data items to run, you must pass the 'arguments' in the method call.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "An ___ is a collection of data items, all of the same type, in which each item's position is uniquely designated by an integer.", 'array', 'An array is one of the most basic forms of a data structure.');
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', 'To explicitly convert one data type to another is called ___.', 'casting', 'In certain cases you can convert an item of a data type into an item of another data type.');
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The ___ statement allows for multiple execution paths based on its 'case'.", 'switch', "The switch statement will evaluate a variable and branch accordingly based on the paths you have defined.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "A ___ is a reserved block of memory that you define by naming it and assigning it a value.", 'variable', "Variables are a quick way to store information. Use data structures if you need to store large amounts of information.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The method called ___ marks the beginning of your program.", 'main', "The 'main' method tells runtime where the program begins.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "Finish this statement: ___.out.println(\"Hello World\");", 'System', "In addition to 'System.out.println', you can also use 'printf'.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The position of an array element is said to be its ___", 'index', "You can access an array's element by referring to its index.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "An 'if /___' statement will branch to one of two possible execution paths.", 'else', "You can have nested 'if / else' statements.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "A ___ statement is a statement that will be evaluated for it's truth value.", 'conditional', "An 'if / else' statement is a conditional statement.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "Use the keyword ___ to compile a .java file.", 'javac', "Javac -- the extra c is for 'compile'!");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "Use the keyword ___ to run a .class file.", 'java', "The keyword is 'java'.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "An ___, such as Eclipse, provides programmers with a robust set of tools to write code.", 'IDE', "You don't need an IDE to program; you can always use the console!");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "A ___ will define a class' parameters when an object is created.", 'constuctor', "You have to explicitly define a constructor if you wish to initialize that class' data fields when an onject is created.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The keyword ___ means the method will not return anything.", 'void', "Don't use void if you want the method to return a value such as an int.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "A ___ is a group of zero or more statements.", 'block', "A code 'block' can be large or small.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The keyword ___ refers to an empty value.", 'null', "You can declare a variable 'null' until you're ready to assign it a value.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "___ brackets define the scope of a function.", 'Curly', "Curly brackets signal a functions beginning and end.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The keyword ___ allows you to exit a loop prematurely.", 'break', "It's always a good idea to find a 'natural' way to exit a loop to avoid using 'break'.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "___ is a feature of Java that allows methods and constructors to be overloaded.", 'Polymorphism', "Polymorphism allows classes to be versatile.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The keyword ___ in a switch statement defines the execution path the switch statement will take if no other cases are a match.", 'default', "It's always a good idea to have a 'default' case in a switch statement.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The compiler checks for correct ___, or the proper arrangement of words in your code.
+", 'syntax', "Syntax refers to the arrangement of the words in your code.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The ___ class is the superclass of every class.", 'Object', "Every class is a descendant of the Object class.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb', "The term ___ refers to the process of hiding the implementation and only showing the funtionality to the user.", 'abstraction', "The user doesn't have to know how it works, only that it does. Hopefully.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb',  "___ code refers to the informal desrciption of an algorithm or program.", 'pseudo', "It may be wise to write out some psudo code before you actually start writing code.");
+INSERT INTO fitbQuestions(Type, Question, CorrectAnswer, Comment) VALUES('fitb',  "An ___ is a series of steps that solves a problem.", 'pseudo', "Ideally, the algorithm should solve the problem in as few steps as possible.");
+
+
+
+TRUE/FALSE:
+
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A 'comment' in a program is explanatory text that is ignored by the compiler.", 'true', 'You can use comments to keep notes in your code.');
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A 'compitulator' is a program that translates source code into code to be executed by a computer.", 'false', "Cheap shot. It's actally a 'compiler'.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The keyword 'float' is used to define a floating point number variable.", 'true', 'You can use a float to store a 32-bit decimal.');
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "An 'object' is the principal building blocks of object-oriented programs.", 'true', 'Classes are object that can be reused at a later time. Saves you the trouble of writing code over and over again.');
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A 'special key' is a reserved word in the Java language.", 'false', "It's called a Java 'keyword' or 'reserved word'.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A 'method' is a function defined in a class.", 'true', 'Function, method, procedure, subprogram and routine are usually interchangeable terms.');
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The keyword 'import' is used to import Java packages not loaded by default.", 'true', "Use 'import' when you want to use packages such as java.util.Scanner which are not loaded by default.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A 'stacked' if / else statement is an if / else statment inside another if/ else statement.", 'false', "You can also have 'nested' loops.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A 'constructor' is defined by writing a method with the same name as the class it's in.", 'true', "You can have multiple constructor as long as they have different signatures.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "You can have multiple constructors but only if they share the same signature.", 'false', "You can have multiple constructors but they must have different signatures.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A recursive function is one which calls on itself until a terminal condition is met.", 'true', "Always make sure you have an exit condition for a recursive function or it will run indefinitely.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "All variables are initialized automatically.", 'false', "You have to explicitly initialize a variable.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "Primitive data types refer to data types such as short, int, double, and float.", 'true', "These are data types defined by Java.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The access modifier 'public' defines a class' method or data field to be accessible by other classes.", 'true', "Don't define a method or data field public if you don't want other classes to have access.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "You can declare a class as private.", 'false', "You can only declare methods, variables, and constructors as private.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "If you define a variable as 'final' it cannot be changed.", 'true', "Use 'final' for constants such as the value of pi.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The access modifier 'protected' defines a class' method or data field to be accessible by members of other classes.", 'false', "Protected only gives access permission to members of its own class.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The keyword 'static' defines a method or data field that will be unique to each object of that class.", 'false', "If you declare a method or variable static, it will be shared by all objects of that class.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "It would be appropriate to define the variable 'double currentTime' as final on a program that displays the time every second.", 'false', "The program would have to update displayTime every second and thus defining it as 'final' would not be appropriate.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The statement \"System.out.println(\"Hello\" + \"World\")\" would print the sum of ASCII values.", 'false', "The plus command would simply concatenate the two words.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The compiler turns object code into source code.", 'false', "The compiler turns source code into object code.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The conditional statement is declared before the 'do' in a do-while loop.", 'false', "The conditional statement is declared after the loop body in a do-while statement.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A semicolon marks the end of a statement.", 'true', "You'll forget to do this...a lot.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "The following for loop statement is syntactically correct: for(int i = 0, i < SIZE, i++) ", 'false', "Semicolons, not commas, separate the three different parts of a for loop statement.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "Semantics refers to the meaning of the words in your code.", 'true', "Semantics refers to meaning; syntax refers to structure.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "A constructor is inhereted.", 'false', "Constructors are not inhereted.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "Pointers are not supported in Java.", 'true', "Because of their associated health risks (severe headaches and sometimes death), pointers are not supported in Java.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "An abstract class can be instantiated.", 'false', "An abstract class must be extended and its methods implemented. It cannot be instantiated.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "You need to import the java.lang package every time.", 'false', "The java.lang package is imported automatically for you. See how nice Java is? C++ could learn a few things from Java.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "String objects are immutable.", 'true', "Once created, String objects cannot be changed.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "You can define 'set' and 'get' methods to set and retrive information from class fields.", 'true', "Always a good idea to disallow the user from directly manipulating the data fields.");
+INSERT INTO tfQuestions(Type, Question, CorrectAnswer, Comment) VALUES('tf', "You should write as much code as you can before you test it.", 'false', "You should check your code often and early. It is much easier to debug as you go along.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical AND.", '&&', '||', '>', '\'==\'', '\'$$\'', 'Use && when you want to include AND in a conditional statement.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical OR.", '\'||\'', '\'&&\'', '\'>\'', '\'==\'', '\'*\'', 'Use || when you want to include OR in a conditional statement.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical LESS-THAN.", '\'<\'', '\'&&\'', '\'>\'', '\'==\'', '\'*\'', 'This operator will evaluate the left-hand data member as LESS-THAN the right-hand data member and find the truth value.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical MORE-THAN.", '\'>\'', '\'&&\'', '\'<\'', '\'==\'', '\'+\'', 'This operator will evaluate the left-hand data member as MORE-THAN the right-hand data member and find the truth value.');
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical EQUAL.", '==', '\'&&\'', '\'>\'', '\'!=\'', '\'=\'', "Remember: one equal sign means assignment and two equal signs mean 'I want to evaluate these items for equality'");
+INSERT INTO mcQuestions(Type, Question, CorrectAnswer, Answer2, Answer3, Answer4, Answer5, Comment) VALUES('mc', "This operator is used to represent logical NOT EQUAL.", '\'!=\'', '\'&&\'', '\'<\'', '\'==\'', '\'!!\'', "The ! means nagation, therefore, != means NOT equal.");

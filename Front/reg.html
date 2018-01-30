@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta chatset="UTF-8">  
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+<h2 class="header2-reg" >Registration</h2>
+<h3 class="header3">vBeta</h3>
+<hr>
+<form name="registration" method="post" action="frontReg.php">
+  <p class="usernameText">username:</p><input class="usernameBox-static" type="text" name="Username" id="Username" required>
+  <p class="usernameText">password:</p><input class="usernameBox-static" type="Password" name="Password" id="Password" required>
+  <select class="select-reg" name="accType" style="position: relative; top: 60px; left: 690px;">
+    <option value="student">Student</option>
+    <option value="faculty">Faculty</option>
+  </select>
+  <p>
+    <input class="reg pos-middle1" type="submit" name="submit" id="submit" value="Sign Up" style="position: relative; top: 100px; left: 903px;">
+  </p>
+</form>
+</body>
+</html>
