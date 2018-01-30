@@ -12,4 +12,3 @@ Initially a project for school, this is a website that facilitates the exam buil
 ## Students
 * Students can take an exam that the instructor has posted.
 * Once completed, the exam will be graded and the results will be shown instantaneously and the student will be provided the correct answers for any of the multiple choice, fill in the blank, true or false questions they did not answer correctly.
-    -
