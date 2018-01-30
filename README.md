@@ -21,4 +21,4 @@ Initially a project for school, this is a website that facilitates the exam buil
 * Java
 * JSON
 
-A, hopefully, live version of the site can be found [here.](https://web.njit.edu/~edm8/cs490/Front/login.html)
+A live, as of this writing, version of the site can be found [here.](https://web.njit.edu/~edm8/cs490/Front/login.html)
