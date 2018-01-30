@@ -1,5 +1,5 @@
 # Exam-Website
-Initially a project for school, this is a website that facilitates the exam building and taking process. More documentation was obviously required but we all know how stressed for time it can be when you're in college!
+Initially a project for school, this is a website that facilitates the exam building and taking process. It was built using the MVC architecture. More documentation was obviously required but we all know how stressed for time it can be when you're in college!
 
 * Instructors and students make accounts.
 
@@ -21,4 +21,4 @@ Initially a project for school, this is a website that facilitates the exam buil
 * Java
 * JSON
 
-A, hopefully, live version of the site can be found [here.](https://www.google.com)
+A, hopefully, live version of the site can be found [here.](https://web.njit.edu/~edm8/cs490/Front/login.html)
